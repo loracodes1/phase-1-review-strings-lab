@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 8,
-    "start": "2024-09-25T15:19:52.846Z",
-    "end": "2024-09-25T15:19:53.278Z",
-    "duration": 432
+    "start": "2024-09-25T15:59:23.284Z",
+    "end": "2024-09-25T15:59:23.765Z",
+    "duration": 481
   },
   "tests": [
     {
@@ -23,10 +23,10 @@
       "duration": 1,
       "currentRetry": 0,
       "err": {
-        "message": "expected 'Welcome to Flatbook!' to contain 'Welcome to Flatbook, '",
+        "message": "expected 'Welcome to Flatbook!Grace Hoper' to contain 'Welcome to Flatbook, '",
         "showDiff": false,
-        "actual": "Welcome to Flatbook!",
-        "stack": "AssertionError: expected 'Welcome to Flatbook!' to contain 'Welcome to Flatbook, '\n    at Context.<anonymous> (test/indexTest.js:13:38)\n    at process.processImmediate (node:internal/timers:491:21)"
+        "actual": "Welcome to Flatbook!Grace Hoper",
+        "stack": "AssertionError: expected 'Welcome to Flatbook!Grace Hoper' to contain 'Welcome to Flatbook, '\n    at Context.<anonymous> (test/indexTest.js:13:38)\n    at process.processImmediate (node:internal/timers:491:21)"
       }
     },
     {
@@ -34,19 +34,20 @@
       "fullTitle": "index.js welcomeMessage contains the value of the 'currentUser' variable",
       "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "message": "expected 'Welcome to Flatbook!' to contain 'Florence'",
-        "showDiff": false,
-        "actual": "Welcome to Flatbook!",
-        "stack": "AssertionError: expected 'Welcome to Flatbook!' to contain 'Florence'\n    at Context.<anonymous> (test/indexTest.js:17:38)\n    at process.processImmediate (node:internal/timers:491:21)"
-      }
+      "err": {}
     },
     {
       "title": "ends with an exclamation point!",
       "fullTitle": "index.js welcomeMessage ends with an exclamation point!",
       "duration": 1,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "message": "expected 'r' to equal '!'",
+        "showDiff": true,
+        "actual": "r",
+        "expected": "!",
+        "stack": "AssertionError: expected 'r' to equal '!'\n    at Context.<anonymous> (test/indexTest.js:21:44)\n    at process.processImmediate (node:internal/timers:491:21)"
+      }
     },
     {
       "title": "contains \"WELCOME TO FLATBOOK, \"",
@@ -61,7 +62,7 @@
     {
       "title": "contains the value of the 'currentUser' variable",
       "fullTitle": "index.js excitedWelcomeMessage contains the value of the 'currentUser' variable",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: excitedWelcomeMessage is not defined\n    at Context.<anonymous> (test/indexTest.js:33:14)\n    at process.processImmediate (node:internal/timers:491:21)",
@@ -71,7 +72,7 @@
     {
       "title": "ends with an exclamation point",
       "fullTitle": "index.js excitedWelcomeMessage ends with an exclamation point",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: excitedWelcomeMessage is not defined\n    at Context.<anonymous> (test/indexTest.js:37:14)\n    at process.processImmediate (node:internal/timers:491:21)",
@@ -91,7 +92,7 @@
     {
       "title": "contains the first initial of the name stored in the 'currentUser' variable",
       "fullTitle": "index.js shortGreeting contains the first initial of the name stored in the 'currentUser' variable",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: shortGreeting is not defined\n    at Context.<anonymous> (test/indexTest.js:50:14)\n    at process.processImmediate (node:internal/timers:491:21)",
@@ -117,22 +118,23 @@
       "duration": 1,
       "currentRetry": 0,
       "err": {
-        "message": "expected 'Welcome to Flatbook!' to contain 'Welcome to Flatbook, '",
+        "message": "expected 'Welcome to Flatbook!Grace Hoper' to contain 'Welcome to Flatbook, '",
         "showDiff": false,
-        "actual": "Welcome to Flatbook!",
-        "stack": "AssertionError: expected 'Welcome to Flatbook!' to contain 'Welcome to Flatbook, '\n    at Context.<anonymous> (test/indexTest.js:13:38)\n    at process.processImmediate (node:internal/timers:491:21)"
+        "actual": "Welcome to Flatbook!Grace Hoper",
+        "stack": "AssertionError: expected 'Welcome to Flatbook!Grace Hoper' to contain 'Welcome to Flatbook, '\n    at Context.<anonymous> (test/indexTest.js:13:38)\n    at process.processImmediate (node:internal/timers:491:21)"
       }
     },
     {
-      "title": "contains the value of the 'currentUser' variable",
-      "fullTitle": "index.js welcomeMessage contains the value of the 'currentUser' variable",
+      "title": "ends with an exclamation point!",
+      "fullTitle": "index.js welcomeMessage ends with an exclamation point!",
       "duration": 1,
       "currentRetry": 0,
       "err": {
-        "message": "expected 'Welcome to Flatbook!' to contain 'Florence'",
-        "showDiff": false,
-        "actual": "Welcome to Flatbook!",
-        "stack": "AssertionError: expected 'Welcome to Flatbook!' to contain 'Florence'\n    at Context.<anonymous> (test/indexTest.js:17:38)\n    at process.processImmediate (node:internal/timers:491:21)"
+        "message": "expected 'r' to equal '!'",
+        "showDiff": true,
+        "actual": "r",
+        "expected": "!",
+        "stack": "AssertionError: expected 'r' to equal '!'\n    at Context.<anonymous> (test/indexTest.js:21:44)\n    at process.processImmediate (node:internal/timers:491:21)"
       }
     },
     {
@@ -148,7 +150,7 @@
     {
       "title": "contains the value of the 'currentUser' variable",
       "fullTitle": "index.js excitedWelcomeMessage contains the value of the 'currentUser' variable",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: excitedWelcomeMessage is not defined\n    at Context.<anonymous> (test/indexTest.js:33:14)\n    at process.processImmediate (node:internal/timers:491:21)",
@@ -158,7 +160,7 @@
     {
       "title": "ends with an exclamation point",
       "fullTitle": "index.js excitedWelcomeMessage ends with an exclamation point",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: excitedWelcomeMessage is not defined\n    at Context.<anonymous> (test/indexTest.js:37:14)\n    at process.processImmediate (node:internal/timers:491:21)",
@@ -178,7 +180,7 @@
     {
       "title": "contains the first initial of the name stored in the 'currentUser' variable",
       "fullTitle": "index.js shortGreeting contains the first initial of the name stored in the 'currentUser' variable",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: shortGreeting is not defined\n    at Context.<anonymous> (test/indexTest.js:50:14)\n    at process.processImmediate (node:internal/timers:491:21)",
@@ -205,8 +207,8 @@
       "err": {}
     },
     {
-      "title": "ends with an exclamation point!",
-      "fullTitle": "index.js welcomeMessage ends with an exclamation point!",
+      "title": "contains the value of the 'currentUser' variable",
+      "fullTitle": "index.js welcomeMessage contains the value of the 'currentUser' variable",
       "duration": 1,
       "currentRetry": 0,
       "err": {}
