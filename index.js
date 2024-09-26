@@ -1,9 +1,13 @@
 // Write your code in this file!
-const currentUser ='Grace Hoper';
+const currentUser ='Loracodes';
+console.log(currentUser)
 // const welcomeMessage ='Welcome to Flatbook!';
 const welcomeMessage= `Welcome to Flatbook, ${currentUser}!`;
+console.log( welcomeMessage)
 const excitedWelcomeMessage = welcomeMessage.toUpperCase();
-const shortGreeting = `Welcome, {currentUser}`;
+console.log(excitedWelcomeMessage)
+const shortGreeting = `Welcome, ${currentUser}`;
+console.log(shortGreeting)
 
 
 
