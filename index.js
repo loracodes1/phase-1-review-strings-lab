@@ -8,6 +8,10 @@ const excitedWelcomeMessage = welcomeMessage.toUpperCase();
 console.log(excitedWelcomeMessage)
 const shortGreeting = `Welcome, ${currentUser}`;
 console.log(shortGreeting)
+currentUser.slice(0,1)
+console.log(currentUser.slice(0,1));
+
+
 
 
 
